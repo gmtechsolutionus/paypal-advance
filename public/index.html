@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PayPal Advance</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <span class="badge">Cash Flow Solutions</span>
+        <h1>Unlock tomorrow’s revenue today with PayPal Advance</h1>
+        <p>
+          Flexible, transparent financing designed for growing businesses. Secure
+          fast access to working capital without interrupting your payment flow.
+        </p>
+        <a href="#apply" class="cta">Check your eligibility</a>
+      </div>
+      <div class="hero__card">
+        <h2>Advance Snapshot</h2>
+        <ul>
+          <li><strong>Funding range:</strong> $5k — $250k</li>
+          <li><strong>Decision time:</strong> Under 5 minutes</li>
+          <li><strong>Payback:</strong> Automated with each sale</li>
+          <li><strong>Fees:</strong> Fixed, clear, and upfront</li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="features" id="features">
+        <h2>Why businesses choose PayPal Advance</h2>
+        <div class="grid">
+          <article>
+            <h3>Fast access to capital</h3>
+            <p>
+              Submit a short application connected to your PayPal sales data and
+              unlock funding options tailored to your performance.
+            </p>
+          </article>
+          <article>
+            <h3>Seamless repayment</h3>
+            <p>
+              Payments adjust dynamically with your revenue so you only pay more
+              when you sell more.
+            </p>
+          </article>
+          <article>
+            <h3>No hidden surprises</h3>
+            <p>
+              Review transparent terms before accepting the advance—no compound
+              interest, late fees, or prepayment penalties.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="calculator" id="calculator">
+        <h2>Estimate your advance</h2>
+        <p class="calculator__note">
+          Use your average monthly sales to get a quick estimate of potential
+          funding.
+        </p>
+        <form id="estimate-form">
+          <label for="sales">Average monthly PayPal sales ($)</label>
+          <input
+            type="number"
+            id="sales"
+            min="0"
+            step="100"
+            placeholder="e.g. 12000"
+            required
+          />
+
+          <label for="percentage">Advance percentage</label>
+          <input
+            type="range"
+            id="percentage"
+            min="10"
+            max="35"
+            value="20"
+          />
+          <div class="range-value"><span id="percentage-value">20</span>%</div>
+
+          <button type="submit" class="cta">Calculate potential advance</button>
+        </form>
+        <div class="estimate" id="estimate-output" aria-live="polite"></div>
+      </section>
+
+      <section class="faq" id="faq">
+        <h2>Frequently asked questions</h2>
+        <details>
+          <summary>How quickly can I access funds?</summary>
+          <p>
+            Approved funds typically arrive in your PayPal account within one
+            business day of accepting the advance offer.
+          </p>
+        </details>
+        <details>
+          <summary>How are repayments collected?</summary>
+          <p>
+            We deduct a small percentage of your PayPal sales automatically until
+            the advance and fee are fully repaid.
+          </p>
+        </details>
+        <details>
+          <summary>Can I repay early?</summary>
+          <p>
+            Yes. There are no prepayment penalties—you can repay the remaining
+            balance at any time.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer id="apply">
+      <div>
+        <h2>Ready to accelerate your growth?</h2>
+        <p>
+          Connect your PayPal Business account to view tailored offers. Checking
+          eligibility won’t impact your credit score.
+        </p>
+      </div>
+      <a class="cta secondary" href="mailto:sales@paypal-advance.com"
+        >Talk to a specialist</a
+      >
+    </footer>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
