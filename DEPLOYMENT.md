@@ -1,17 +1,21 @@
 # Deployment Notes
 
-This project deploys to Vercel as a static site that lives in the `public/`
-folder. The root `vercel.json` already pins the output directory to `public`, so
-no extra configuration is required. No build step is required; just commit any
-HTML/CSS/JS updates under `public/`.
+This project is a Next.js application deployed on Vercel. The build pipeline is
+standard—Vercel runs `npm install` followed by `npm run build`, which produces
+an optimized production bundle.
 
 ## Local verification
 
-You can preview the site locally with any static file server. For example:
+Run the development server locally to validate copy updates or layout tweaks:
 
 ```bash
-npx serve public
+npm install
+npm run dev
 ```
+
+Visit `http://localhost:3000` to preview the experience. When you are ready to
+ship, execute `npm run build` locally to ensure the project compiles without
+errors.
 
 ## Updating npm tooling (optional)
 
